@@ -1,0 +1,42 @@
+<div class="card">
+    <div class="card-body">
+        <form action="#" method="post">
+        <form [formGroup]="angForm" novalidate>
+        <div class="form-group">
+          <label class="col-md-4">Company ID</label>
+          <input type="text" class="form-control" formControlName="comp_id" #comp_id />
+        </div>
+        <div *ngIf="angForm.controls['comp_id'].invalid && (angForm.controls['comp_id'].dirty || angForm.controls['comp_id'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['comp_id'].errors.required">
+                Company ID is required.
+                </div>
+            </div>
+        
+        <div class="form-group">
+          <label class="col-md-4">company Name</label>
+          </>
+        </div>
+        <div *ngIf="angForm.controls['comp_name'].invalid && (angForm.controls['comp_name'].dirty || angForm.controls['comp_name'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['comp_name'].errors.required">
+                Company Name is required.
+            </div>
+        </div>
+        
+        <div class="form-group">
+          <label class="col-md-4">Test Creator</label>
+          <input type="text" class="form-control" formControlName="test_creator" #test_creator />
+        </div>
+        <div *ngIf="angForm.controls['test_creator'].invalid && (angForm.controls['test_creator'].dirty || angForm.controls['test_creator'].touched)" class="alert alert-danger">
+            <div *ngIf="angForm.controls['test_creator'].errors.required">
+                Test Creator is required.
+            </div>            
+        </div>
+
+        <div class="form-group">
+          <button (click)="addAssess(comp_id.value, comp_name.value, test_creator.value)" 
+          class="btn btn-primary"> Register </button>
+        </div>
+        </form>
+      </form>
+    </div>
+  </div>

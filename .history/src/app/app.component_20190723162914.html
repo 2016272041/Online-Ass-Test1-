@@ -1,0 +1,79 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.ggogleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav
+<nav class="navbar navbar-inverse">
+  <div class="contanier-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><b><font color = 'lightgreen'>ONLINE TEST FORUM</font></b></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#"> Home </a></li> 
+      <li Class="active"><a href="#"> Assessment Advice </a></li> 
+      <li Class="active"><a href="#"> Practice Tests </a></li> 
+      <li Class="active"><a href="https://www.recruiter.com/career-test.html"> Career Test Tips </a></li> 
+      <li Class="active"><a href="#"> Help </a></li>
+      <li class="active"><a href="#"> Contact </a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> page 1 <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#"> Page 1-1 </a></li>
+          <li><a href="#"> Page 1-2 </a></li>
+          <li><a href="#"> page 1-3 </a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" dtat-toggle="dropdown" href="#"> page 2 <span class="caret"></span></a></li>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="http://127.0.0.1:8080/login"><span class="glyphicon glyphicon-user"></span> Login </a></li>
+          <li><a href="http://127.0.0.1:8080/signup"><span class="glyphicon glyphicon-user"></span> SignUp </a></li>
+        </ul>
+    </ul>
+  </div>
+</nav>
+
+<div class="header">
+  <img src="http://oesv1.textusintentio.com/images/logo/your%20school.png" alt = "logo" style = "width: 128px; height: 128px;">
+  <img src="http://oesv1.textusintentio.com/images/logo/your%20school.png" img align = "right" alt = "logo" style = "width: 128px; height: 128px;">
+</div>
+
+
+
+<div style="text-align:center">
+  <h1>
+    <b>WELCOME TO ONLINE ASSESSMENT</b>
+  </h1>
+  </div>
+<div style="text-align:center">
+<div style ="text-decoration-color: aqua">
+<h2> Here are some links to help you start: </h2>
+<ul>
+    <h3><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Online_employment_screening_tests">Why Online Assessment Forum</a></h3>
+  
+    <h3><a target="_blank" rel="noopener" href="http://www.praccreditation.org/resources/aprdemo/index.htm">Sample Test</a></h3>
+
+    <h3><a target="_blank" rel="noopener" href="https://blog.angular.io/">Test Blog</a></h3>
+</ul>
+</div>
+</div>
+<div style="text-align: center">
+<div class="container">
+    <button type="button" class="btn btn-primary"><a routerLink="cre-tests" routerLinkActive="active"><b><font color="black">Create Tests</font></b></a></button> |
+    <button type="button" class="btn btn-success"><a routerLink="tests" routerLinkActive="active"><b><font color="black">Company Registration</font></b></a></button> |
+    <button type="button" class="btn btn-secondry"><a routerLink="questions" routerLinkActive="active"><b><font color="black">Questions</font></b></a></button> |
+    <button type="button" class="btn btn-info"><a routerLink="mcq" routerLinkActive="active"><b><font color="black">MCQ</font></b></a></button> | 
+    <button type="button" class="btn btn-warning"><a routerLink="trueorfalse" routerLinkActive="active"><b><font color="black">True or False</font></b></a></button> |
+    <button type="button" class="btn btn-success"><a routerLink="quiz" routerLinkActive="active"><b><font color="black">Quiz</font></b></a></button> 
+</div>
+</div>
+
+<div class="container">
+  <app-quiz></app-quiz>
+</div>
+</body>
+</html>
