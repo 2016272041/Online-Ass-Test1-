@@ -15,7 +15,8 @@ export class QuizService {
       { id: 'data/javascript.json', name: 'JavaScript' },
       { id: 'data/aspnet.json', name: 'Asp.Net' },
       { id: 'data/csharp.json', name: 'C Sharp' },
-      { id: 'data/designPatterns.json', name: 'Design Patterns' }
+      { id: 'data/designPatterns.json', name: 'Design Patterns' },
+      { id: 'data/tradefinance.json', name: 'Trade Finance' }
     ];
   }
 
