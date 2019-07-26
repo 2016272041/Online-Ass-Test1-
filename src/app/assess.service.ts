@@ -11,14 +11,11 @@ export class AssessService {
 
   constructor(private http: HttpClient) { }
 
-  addAssess(companyid, companyname, testcreator, testdate, testid, testname) {
+  addAssess(testid, testname, testcreator) {
     const obj = {
-      company_id: companyid,
-      company_name: companyname,
-      test_creator: testcreator,
-      test_date: testdate,
-      test_id: testid,
-      test_name: testname
+      testid: testid,
+      testname: testname,
+      testcreator: testcreator
     };
     console.log(obj);
     this.http.post(`${this.uri}/add`, obj)

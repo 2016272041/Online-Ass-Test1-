@@ -14,12 +14,15 @@ export class TestsComponent implements OnInit {
 
    createForm() {
      this.angForm = this.fb.group({
-      comp_id: ['', Validators.required ],
-      comp_name: ['', Validators.required],
+      test_id: ['', Validators.required ],
+      test_name: ['', Validators.required],
       test_creator: ['', Validators.required]
      });
    }
 
+   addAssess(testid, testname, testcreator) {
+     this.as.addAssess(testid, testname, testcreator);
+   }
 
   ngOnInit() {
   }

@@ -85,6 +85,7 @@ export class QuizComponent implements OnInit {
 
   onSelect(question: Question, option: Option) {
     if (question.questionTypeId === 1) {
+      // tslint:disable-next-line:curly
       question.options.forEach((x) => { if (x.id !== option.id) x.selected = false; });
     }
 
@@ -102,13 +103,16 @@ export class QuizComponent implements OnInit {
 
   isAnswered(question: Question) {
     return question.options.find(x => x.selected) ? 'Answered' : 'Not Answered';
+  // tslint:disable-next-line:semicolon
   };
 
   isCorrect(question: Question) {
     return question.options.every(x => x.selected === x.isAnswer) ? 'correct' : 'wrong';
+  // tslint:disable-next-line:semicolon
   };
 
   onSubmit() {
+    // tslint:disable-next-line:prefer-const
     let answers = [];
     this.quiz.questions.forEach(x => answers.push({ 'quizId': this.quiz.id, 'questionId': x.id, 'answered': x.answered }));
 

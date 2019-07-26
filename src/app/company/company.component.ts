@@ -19,12 +19,11 @@ export class CompanyComponent implements OnInit {
       company_id: ['', Validators.required ],
       company_name: ['', Validators.required],
       test_name: ['', Validators.required],
-      test_date: ['', Validators.required]
      });
    }
 
-   addAssess(companyid, companyname, testname, testdate, testid, testcreator) {
-     this.as.addAssess(companyid, companyname, testname, testdate, testid, testcreator);
+   addAssess(companyid, companyname, testname ) {
+     this.as.addAssess(companyid, companyname, testname);
    }
 
   ngOnInit() {
