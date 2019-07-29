@@ -1,5 +1,6 @@
 <div class="card">
         <div class="card-body">
+            <form action="/src/app/tests/tests.component.html" method="post" name="form1">
             <form [formGroup]="angForm" novalidate>
             <div class="form-group">
               <label class="col-md-4">Test ID</label>
@@ -35,6 +36,7 @@
               <button (click)="addAssess(test_id.value, test_name.value, test_creator.value)" 
               class="btn btn-primary"> Register </button>
             </div>
+            </form>
             </form>
         </div>
       </div>

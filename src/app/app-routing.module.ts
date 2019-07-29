@@ -6,6 +6,8 @@ import { HelperService } from './services/helper.service';
 import { QuizService } from './services/quiz.service';
 import { CompanyComponent } from './company/company.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
 {
@@ -36,6 +38,16 @@ const routes: Routes = [
 {
     path: 'QuizService',
     component: QuizService
+},
+
+{
+    path: 'login',
+    component: LoginComponent
+},
+
+{
+    path: 'signup',
+    component: SignupComponent
 }
 
 

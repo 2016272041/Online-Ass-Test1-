@@ -9,6 +9,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { TestsComponent } from './tests/tests.component';
 import { CompanyComponent } from './company/company.component';
 import { QuestionsComponent } from './questions/questions.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { QuestionsComponent } from './questions/questions.component';
     QuizComponent,
     TestsComponent,
     CompanyComponent,
-    QuestionsComponent
+    QuestionsComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

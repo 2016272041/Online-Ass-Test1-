@@ -7,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AssessService {
 
-  uri = 'http://localhost:3002/test';
+  uri = 'http://localhost:3306/onlineass';
 
   constructor(private http: HttpClient) { }
 
@@ -18,7 +18,7 @@ export class AssessService {
       testcreator: testcreator
     };
     console.log(obj);
-    this.http.post(`${this.uri}/add`, obj)
+    this.http.post(`${this.uri}/tests`, obj)
       .subscribe(res => console.log('Done'));
   }
 }
